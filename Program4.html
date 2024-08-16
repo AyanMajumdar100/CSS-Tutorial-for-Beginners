@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <!-- Linking Google Font (same font but not imported instead linked)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Importing google font using import statement */
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+        .importFont {
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .linkedFont {
+            font-family: "Edu AU VIC WA NT Hand";
+            font-optical-sizing: auto;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* web safe fonts are predefined in OS */
+        .cursive {
+            font-family: cursive;
+            font-size: 25px;
+        }
+
+        /* Font stack is used in case Franklin Gothic is not present in a Client's Operating system */
+        .fontStack {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 1.3em;
+        }
+
+        span {
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS FONTS TUTORIAL</h3>
+    <div>
+        <a href="https://www.cssfontstack.com/" target="_blank">CSS WEB SAFE FONTS LISTING(CSS font stack)</a>
+    </div>
+    <br>
+    <div>
+        <a href="https://fonts.google.com/" target="_blank">GOOGLE CSS WEB FONTS</a>
+    </div>
+    <p>Lets play with some css font styling.</p>
+
+    <p class="cursive">Cursive is a WEB-SAFE FONT.</p>
+
+    <p class="fontStack">This is a Font Stack(checks the font availibilty from 1st to last)</p>
+
+    <p class="fontStack">This is a paragraph showing <span>Fonts</span> style, height, weight.</p>
+
+    <p class="importFont">This Font is (Imported) from Google fonts.</p>
+
+    <p class="linkedFont">This Font is (Linked) from Google fonts.</p>
+</body>
+
+</html>

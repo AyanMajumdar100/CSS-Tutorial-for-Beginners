@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Simple CSS Element Selector */
+        p {
+            color: red;
+            /* writing only solid and not mentioning color will give border color as respective p tag text color */
+            border: 2px solid;
+        }
+
+        /* p tag inside div tag will not be blue (Will remain red color) */
+        div {
+            color: blue;
+        }
+
+        /* Simple CSS id Selector */
+        #colorBlack {
+            color: black;
+        }
+
+        /* Simple CSS class Selector */
+        .colorAquamarine {
+            color: aquamarine;
+            border: 2px solid violet;
+        }
+
+        .colorWhite {
+            color: white;
+        }
+
+        .bgCoral {
+            background-color: rgb(87, 87, 231);
+        }
+
+        /* Simple CSS Grouping Selector */
+        footer,
+        span {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS SELECTORS TUTORIAL</h3>
+
+    <p>This is a simple paragraph to demonstrate a simple Element selector</p>
+
+    <div>
+        <!-- if no styling is mentioned for div then the p tag inside will be displayed in red -->
+        <p>This is a simple paragraph(INSIDE DIV) to show that inner element styling takes priority not outer div
+            element.</p>
+        <!-- Even if styling is mentioned for div element then the p tag inside will not be changed(it will remain red styled) -->
+    </div>
+
+    <div>
+        This is a simple DIV ELEMENT selector.
+    </div>
+
+    <p id="colorBlack">This is another simple paragraph to demonstrate a simple ID selector</p>
+    <p class="colorAquamarine">This is a paragraph demonstrating SIMPLE CLASS SELECTOR</p>
+
+    <!-- id styling will take priority over class styling -->
+    <p id="colorBlack" class="colorAquamarine">This is a paragraph showing that ID selector has higher priority</p>
+
+    <p id="colorBlack" style="margin-top: 50px;">NOW LETS SEE WHAT WILL HAPPEN WHEN THERE ARE 2 CLASSES FOR AN ELEMENT
+    </p>
+    <p class="colorAquamarine colorWhite bgCoral">When there are 2 classes the class whose style is below in the
+        internal CSS
+        has greater priority</p>
+
+    <span>This is a span.(Grouping CSS selector used for styling)</span>
+    <footer>
+        This is a footer.(Grouping CSS selector used for styling) &copy;
+    </footer>
+</body>
+
+</html>

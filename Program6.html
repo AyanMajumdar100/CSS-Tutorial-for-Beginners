@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Width & Border</title>
+    <style>
+        #heightWidthBorder {
+            background-color: red;
+            height: 100px;
+            width: 450px;
+        }
+
+        .borderStyle1 {
+            border-width: 5px;
+            border-color: green;
+            border-style: solid;
+            /* Gives a curve to the border corner of 10 px */
+            border-radius: 10px;
+        }
+
+        .borderStyle2 {
+            border: 5px solid rgb(60, 111, 252);
+            border-radius: 10px;
+        }
+
+        .borderStyle3 {
+            background-color: rgb(146, 216, 41);
+            /* Moves the  text to center of the element*/
+            text-align: center;
+            /* Height and width of element */
+            height: 100px;
+            width: 450px;
+
+            /* Different colors for different borders top, left, right, bottom */
+            border-top: 5px solid red;
+            border-bottom: 5px solid black;
+            border-left: 5px solid hotpink;
+            border-right: 5px solid blue;
+
+            /* Giving different curves to different corners of the border. */
+            border-top-left-radius: 2px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 2px;
+        }
+
+        #imagePara1{
+            height: 300px;
+            width: 450px;
+            background-image: url('https://www.codewithharry.com/img/logo-blue.png');
+            border: 2px solid red;
+            /* Not mentioning REPEAT TYPE will lead to the whole element bg to be filled up along both axes. */
+        }
+
+        #imagePara2{
+            height: 300px;
+            width: 450px;
+            background-image: url('https://www.codewithharry.com/img/logo-blue.png');
+            border: 2px solid red;
+            /* repeat-x will repeat the image along x-axis to fill the element height and width */
+            background-repeat: repeat-x;
+        }
+        #imagePara3{
+            height: 300px;
+            width: 450px;
+            background-image: url('https://www.codewithharry.com/img/logo-blue.png');
+            border: 2px solid red;
+            /* repeat-y will repeat the image along y-axis to fill the element height and width */
+            background-repeat: repeat-y;
+        }
+        #imagePara4{
+            height: 300px;
+            width: 450px;
+            background-image: url('https://www.codewithharry.com/img/logo-blue.png');
+            border: 2px solid red;
+            /* no-repeat = doesnt let the image repeat to fill the element height and width */
+            background-repeat: no-repeat;
+        }
+        #imageParaPos{
+            height: 300px;
+            width: 450px;
+            background-image: url('https://www.codewithharry.com/img/logo-blue.png');
+            border: 2px solid red;
+            /* repeat-x repeat-y no-repeat */
+            background-repeat: no-repeat;
+
+            /* NOW LETS SEE HOW TO CENTER THE IMAGE */
+            background-position: center center;
+        }
+        #imageParaPos1{
+            height: 300px;
+            width: 450px;
+            background-image: url('https://www.codewithharry.com/img/logo-blue.png');
+            border: 2px solid red;
+            /* repeat-x repeat-y no-repeat */
+            background-repeat: no-repeat;
+
+            /* NOW LETS SEE HOW TO CENTER THE IMAGE */
+            background-position: top center;
+            /* 
+            CAN BE
+
+            center (top/bottom/left/right)
+
+            OR
+
+            (top/bottom/left/right) center
+            
+            OR
+
+            (top/bottom/left/right) (top/bottom/left/right) 
+            */
+        }
+        #imageParaPos2{
+            height: 300px;
+            width: 450px;
+            background-image: url('https://www.codewithharry.com/img/logo-blue.png');
+            border: 2px solid red;
+            /* repeat-x repeat-y no-repeat */
+            background-repeat: no-repeat;
+
+            /* NOW LETS SEE HOW TO CENTER THE IMAGE */
+            background-position: 100px center;
+            /* 
+            CAN BE 
+
+            100px  (top/bottom/left/right/center)
+            
+            OR
+            
+            (top/bottom/left/right/center) 100px
+            
+            OR
+            
+            100px 200px
+            */
+        }
+    </style>
+</head>
+ 
+<body>
+    <h3>HEIGHT WIDTH AND BORDER TUTORIAL</h3>
+
+    <p id="heightWidthBorder">This is a paragraph demonstrating colors,Height & Width using CSS</p>
+
+    <p id="heightWidthBorder" class="borderStyle1"> This uses the first way of Border styling.</p>
+
+    <p id="heightWidthBorder" class="borderStyle2"> This uses the second way of Border styling.</p>
+
+    <p class="borderStyle3"> This uses the second way of Border styling.</p>
+
+    <p id="imagePara1">This is my Paragraph with image background.</p>
+    <p id="imagePara2">This is my Paragraph with image background(repeat-x).</p>
+    <p id="imagePara3">This is my Paragraph with image background(repeat-y).</p>
+    <p id="imagePara4">This is my Paragraph with image background(no-repeat).</p>
+    <img src="ImagePositioning.png" alt="">
+    <p id="imageParaPos" style="font-weight: bold;">This is my Paragraph with image background(no-repeat & center-center).</p>
+    <p id="imageParaPos1" style="font-weight: bold;">This is my Paragraph with image background(no-repeat & center/Top combos).</p>
+    <p id="imageParaPos2" style="font-weight: bold;">This is my Paragraph with image background(no-repeat & pixel Positioning).</p>
+</body>
+
+</html>

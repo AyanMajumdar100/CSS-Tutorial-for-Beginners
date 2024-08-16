@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial 1</title>
+    <!-- EXTERNAL CSS USING LINK (written above so less priority)-->
+    <link rel="stylesheet" href="Program1.css">
+    <!-- INTERNAL CSS IN HEAD TAG(written below so more priority)-->
+    <style>
+        p{
+            color: white; 
+            background-color: hotpink;
+        }
+    </style>
+    <!-- If external css link was written below internal css then it would have gotten more priority. -->
+</head>
+<body>
+    <h3>This is CSS Inline, Internal & External Tutorial</h3>
+    <p>This tutorial will teach you everything about HTMl/CSS.</p>
+    <!-- INLINE CSS OVERRIDES THE STYLING SET BY INTERNAL CSS -->
+    <p style="color:red;background-color: yellow;">THIS IS AN INLINE CSS IMPLEMENTATION in paragraph tag.</p>
+    <p>THIS PARAGRAPH TAKES THE INTERNAL CSS STYLING(since inline css is not mentioned in the p tag).</p>
+    
+</body>
+</html>

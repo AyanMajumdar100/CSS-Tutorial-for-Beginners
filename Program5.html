@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in CSS</title>
+    <style>
+        #nameColor {
+            /* Color by using their names defined in HTML*/
+            color: red;
+        }
+
+        /* the following 2 methods are used when you want to use a color of your own */
+        /* Color by RGB value */
+        #rgbColor {
+            color: rgb(8, 90, 255);
+        }
+        /* Color by HEX value */
+        #hexColor {
+            color: #00e700;
+        }
+
+        #styleText {
+            /* This gives border to the whole element. */
+            color: white;
+            background-color: aquamarine;
+            border: 2px solid red;
+            font-size: 30px;
+            /* This gives a border around every individual letter. */
+            -webkit-text-stroke: 1px rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>COLOR IN CSS TUTORIAL</h3>
+    <p id="nameColor">This paragraph is from first box(Mentioning the color name)</p>
+
+    <p id="rgbColor">This paragraph is from second box(Mentioning the rgb values)</p>
+
+    <p id="hexColor">This paragraph is from third box(Mentioning the hex values)</p>
+
+    <p id="styleText">This is just a Letter Border Styling technique Demonstration</p>
+
+    <div>
+        <a href="https://htmlcolorcodes.com/" target="_blank"
+            style="font-weight: bold; font-size: 20px; text-decoration: none;"> COLOR PICKER</a>
+    </div>
+</body>
+
+</html>
