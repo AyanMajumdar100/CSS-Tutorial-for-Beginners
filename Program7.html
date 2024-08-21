@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Universal Selector */
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(156, 123, 255);
+        }
+        /* Padding is declared in both container and the IDs */
+        /* Both paddings with be added without priority padding */
+        .container {
+            background-color: blanchedalmond;
+            border: 3px solid salmon;
+            /* Padding comes inside the border */
+            /* we can also write as padding-top/bottom/left/right: SEPERATELY AS PER NEEDS */
+            padding: 50px;
+            /* Margin comes outside the border */
+            margin: 20px;
+            border-radius: 10px;
+            /* This width will change if we increase the padding */
+            width: 500px;
+            /* Paddding increase will not change the width set instead increase height as per requirements */
+            
+        }
+
+        /* we can also set margin the similar way like above */
+        #secondH,
+        #second {
+            padding-top: 30px;
+            padding-bottom: 40px;
+            padding-left: 50px;
+            padding-right: 60px;
+        }
+
+        #thirdH,
+        #third {
+            /* Another way of writing padding/margin */
+            /* (SYNTAX)padding: top right bottom left; (TRBL)*/
+            padding: 30px 60px 40px 50px;
+        }
+
+        #fourthH,
+        #fourth {
+            /* Another way of writing padding/margin */
+            /* padding: (top/bottom) (left/right); when top=bottom & left=right */
+            padding: 10px 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- In HTML eery element has a default margin so we have prefer to declare margin:0 -->
+    <h1 style="margin: 0;">BOX MODEL & MARGIN & PADDING TUTORIAL</h1>
+    <!-- Image showing the CSS Box Model -->
+    <img src="CSS-Box-Model.png" alt="CSS BOX MODEL" height="300px" width="350px">
+    <div class="container">
+        <h3 id="firstH">This is my heading.</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quos dignissimos. Recusandae
+            odit amet, voluptatibus voluptate sit cum cumque inventore odio mollitia consequuntur hic.</p>
+    </div>
+    <div class="container">
+        <h3 id="secondH">This is my heading.</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quos dignissimos. Recusandae
+            odit amet, voluptatibus voluptate sit cum cumque inventore odio mollitia consequuntur hic.</p>
+    </div>
+    <div class="container">
+        <h3 id="thirdH">This is my heading.</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quos dignissimos. Recusandae
+            odit amet, voluptatibus voluptate sit cum cumque inventore odio mollitia consequuntur hic.</p>
+    </div>
+    <div class="container">
+        <h3 id="fourthH">This is my heading.</h3>
+        <p id="fourth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quos dignissimos. Recusandae
+            odit amet, voluptatibus voluptate sit cum cumque inventore odio mollitia consequuntur hic.</p>
+    </div>
+</body>
+
+</html>
