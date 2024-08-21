@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            width: 50%;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+
+        .item {
+            border: 3px solid rgb(110, 110, 110);
+            margin: 0;
+            /* Remove margin */
+            padding: 5px 2px;
+            background-color: rgb(255, 180, 172);
+        }
+
+        .button {
+            display: block;
+            /* Make the button a block element */
+            width: max-content;
+            /* Adjust width to fit the content */
+            border: 3px solid purple;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: rgb(192, 252, 200);
+            color: rgb(2, 2, 2);
+            text-align: center;
+            text-decoration: none;
+            /* Remove underline */
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 auto;
+            /* Center horizontally within its container */
+        }
+
+        .button:hover {
+            background-color: lightgray;
+            /* Change background on hover */
+        }
+
+        .cat1a {
+            grid-column: 1 / 2;
+        }
+
+        .cat2a {
+            grid-column: 2 / 3;
+        }
+
+        .cat3a {
+            grid-column: 1 / 3;
+        }
+
+        .cat4a {
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- PERFECT GRID -->
+    <div class="container">
+        <div class="cat1a item">
+            <h3>Category 1</h3>
+            <p class="cat1paraa para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perferendis
+                autem deleniti, optio quasi ipsam harum animi excepturi, rem assumenda fugiat illo alias! Neque non
+                exercitationem quod labore assumenda ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat non minima, ab voluptates dignissimos ex temporibus provident a consequuntur magnam amet veniam
+                accusamus eius earum commodi quidem iste vitae fugiat.</p>
+        </div>
+        <div class="cat2a item">
+            <h3>Category 2</h3>
+            <p class="cat2apara para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                perferendis autem deleniti, optio quasi ipsam harum animi excepturi, rem assumenda fugiat illo alias!
+                Neque non exercitationem quod labore assumenda ipsam. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Est consequuntur odit ea consectetur itaque id maxime eaque vel laboriosam illum optio
+                incidunt aut, autem, reiciendis fuga eveniet totam voluptas atque. Doloribus ad ducimus impedit nulla
+                quidem minima ut illo option. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="cat3a item">
+            <h3>Category 3</h3>
+            <p class="cat3apara para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perferendis
+                autem deleniti, optio quasi ipsam harum animi excepturi, rem assumenda fugiat illo alias! Neque non
+                exercitationem quod labore assumenda ipsam.</p>
+        </div>
+        <div class="cat4a item">
+            <h3>Category 4</h3>
+            <p class="cat4apara para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perferendis
+                autem deleniti, optio quasi ipsam harum animi excepturi, rem assumenda fugiat illo alias! Neque non
+                exercitationem quod labore assumenda ipsam.</p>
+        </div>
+    </div>
+
+    <a href="Program8.html" class="button">GO BACK TO FLOAT GRID</a>
+</body>
+
+</html>
